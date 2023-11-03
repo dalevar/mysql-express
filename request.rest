@@ -1,0 +1,23 @@
+GET http://localhost:8000/users
+###
+GET http://localhost:8000/users/Lutfi agisna
+###
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "name" : "[1,2,3,4]",
+    "email" : "lutf@gmail.com",
+    "gender" : "Male"
+}
+###
+PATCH http://localhost:8000/users/2
+Content-Type: application/json
+
+{
+    "name" : "Lutfi agisna 2",
+    "email" : "lutf@gmail.com 2",
+    "gender" : "Male"
+}
+###
+DELETE http://localhost:8000/users/2
