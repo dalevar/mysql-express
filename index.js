@@ -4,6 +4,10 @@ import UserRoute from './routes/UserRoute.js';
 import bodyParser from "body-parser";
 const port = 8000;
 
+app.get("/", (req, res) => {
+    res.send("Hello World");
+    });
+
 const app = express();
 app.use(cors());
 
