@@ -1,8 +1,8 @@
-GET http://localhost:8000/users
+GET http://localhost:3000/users
 ###
-GET http://localhost:8000/users/Lutfi agisna
+GET http://localhost:3000/users/1
 ###
-POST http://localhost:8000/users
+POST http://localhost:3000/users
 Content-Type: application/json
 
 {
@@ -10,8 +10,9 @@ Content-Type: application/json
     "email" : "lutf@gmail.com",
     "gender" : "Male"
 }
+DONEE
 ###
-PATCH http://localhost:8000/users/2
+PATCH http://localhost:3000/users/2
 Content-Type: application/json
 
 {
@@ -20,4 +21,4 @@ Content-Type: application/json
     "gender" : "Male"
 }
 ###
-DELETE http://localhost:8000/users/2
+DELETE http://localhost:3000/users/2

@@ -1,0 +1,17 @@
+{
+    "version" :2,
+    "builds" :
+    [
+        {
+            "src" : "test",
+            "use" : "@now/node"
+        }
+    ],
+    "routes" :
+    [
+        {
+            "src" : "/(.*)",
+            "dest" : "/test.js"
+        }
+    ]
+}
