@@ -4,14 +4,14 @@
     [
         {
             "src" : "test",
-            "use" : "@now/node"
+            "use" : "@vercel/node"
         }
     ],
     "routes" :
     [
         {
             "src" : "/(.*)",
-            "dest" : "/test.js"
+            "dest" : "/"
         }
     ]
 }
