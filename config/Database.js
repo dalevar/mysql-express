@@ -1,9 +1,13 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize("crud_express_db", "root", "mifdalganteng", {
-  host: "localhost",
-  // DBMS yang digunakan
-  dialect: "mysql",
-});
+const db = new Sequelize(
+  process.env.DB_DBNAME,
+  process.env.DB_USERNAME,
+  process.env.DB_PASSWORD,
+  {
+    host: process.env.DB_HOST,
+    dialect: "mysql",
+  }
+);
 
 export default db;
