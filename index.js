@@ -8,12 +8,10 @@ import db from "./config/Database.js";
 //   await db.sync();
 // })();
 
-const port = 3000;
+const port = process.env.PORT || 5000;
 
 const app = express();
 app.use(cors());
-
-
 
 // Agar format yang diterima selalu json
 app.use(bodyParser.json());
